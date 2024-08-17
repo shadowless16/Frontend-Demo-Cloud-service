@@ -45,7 +45,7 @@
 }
 
 .bg-secondary,
-.btn-primary {
+.btn-secondary {
     background-color: var(--primary-color);
     color: var(--light-color);
 }
@@ -56,8 +56,27 @@
     color: var(--light-color);
 }
 
+
+.bg-secondary a,
+.btn-secondary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-primary a {
+    color: var(--light-color);
+}
+
 .text-center {
     text-align: center;
+}
+
+/* Alert */
+.alert {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #fff;
 }
 
 .flex {
