@@ -1,3 +1,9 @@
+<!--
+  @file index.html
+  @author [Your Name]
+  @description The main documentation page for EaseHost cloud hosting
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +19,10 @@
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!--
+      @section Navbar
+      @description The navigation bar at the top of the page
+    -->
     <div class="navbar">
       <div class="container flex">
         <h1 class="logo">EaseHost</h1>
@@ -27,94 +36,124 @@
       </div>
     </div>
 
-    <!-- Head -->
+    <!--
+      @section Head
+      @description The header section of the documentation page
+    -->
     <section class="docs-head bg-primary py-3">
       <div class="container grid">
         <div>
           <h1 class="xl">Docs</h1>
-          <p>Check out our Documentation</p>
+          <p>Welcome to EaseHost's documentation! Learn how to get started with our cloud hosting platform.</p>
         </div>
         <img src="images/docs.png" alt="" srcset="" />
       </div>
     </section>
 
-    <!-- Docs Main -->
-     <section class="docs-main my-4">
-        <div class="container grid">
-            <div class="card bg-light p-3">
-                <h3 class="my-2">Essentials</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Introduction</a></li>
-                        <li><a href="#">About EaseHost</a></li>
-                        <li><a href="#">Installation</a></li>
-                    </ul>
-                </nav>
+    <!--
+      @section Docs Main
+      @description The main documentation content
+    -->
+    <section class="docs-main my-4">
+      <div class="container grid">
+        <!--
+          @subsection Essentials
+          @description The essential documentation for getting started with EaseHost
+        -->
+        <div class="card bg-light p-3">
+          <h3 class="my-2">Essentials</h3>
+          <nav>
+            <ul>
+              <li><a href="#">Introduction to EaseHost</a></li>
+              <li><a href="#">Creating an account</a></li>
+              <li><a href="#">Setting up your first project</a></li>
+            </ul>
+          </nav>
 
-                <h3 class="my-2">Depolyment</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Setting up a container</a></li>
-                        <li><a href="#">Using the CLI </a></li>
-                        <li><a href="#">Managing resources</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="card">
-                <h2>
-                    Introduction
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus velit libero quam sit quo in dolorem numquam nostrum unde!
-                </p>
-                <div class="alert alert-success">
-                    <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio quidem labore porro vero quaerat aut dicta mollitia nesciunt eligendi?
-                </p>
-                <a href="#" class="btn btn-primary">Install CLI</a>
-
-                <H3>Requiremnets</H3>
-                <ul>
-                    <li>Windowa 10, Mac OSX, Linux</li>
-                    <li>Node.js v12 or higher</li>
-                </ul>
-
-                <h3>Install</h3>
-                <p>Mac (Homebrew)</p>
-                <pre><code>$ brew install EaseHost-cli</code></pre>
-                <p>NPM</p>
-                <pre><code>$ npm install EaseHost-cli</code></pre>
-                <p>Yarn</p>
-                <pre><code>$ Yarn install EaseHost-cli</code></pre>
-
-            </div>
+          <!--
+            @subsection Deployment
+            @description The deployment documentation for EaseHost
+          -->
+          <h3 class="my-2">Deployment</h3>
+          <nav>
+            <ul>
+              <li><a href="#">Deploying your application</a></li>
+              <li><a href="#">Configuring your environment</a></li>
+              <li><a href="#">Scaling your resources</a></li>
+            </ul>
+          </nav>
         </div>
-     </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-      <div class="container grid grid-3">
-        <div>
-          <h1>EaseHost</h1>
-          <p>Copyright &copy; 2024</p>
-        </div>
-        <nav>
+        <!--
+          @subsection Introduction
+          @description The introduction to EaseHost documentation
+        -->
+        <div class="card">
+          <h2>
+            Introduction to EaseHost
+          </h2>
+          <p>
+            EaseHost is a cloud hosting platform designed to help you deploy and manage your applications with ease. With our platform, you can focus on developing your application while we handle the underlying infrastructure.
+          </p>
+          <div class="alert alert-success">
+            <i class="fas fa-info"></i> Get started with EaseHost today and experience the power of cloud hosting!
+          </div>
+          <h3>Benefits of EaseHost</h3>
+          <p>
+            With EaseHost, you can enjoy a range of benefits, including:
+          </p>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
+            <li>Scalable infrastructure</li>
+            <li>High-performance computing</li>
+            <li>Automated backups and security</li>
           </ul>
-        </nav>
-        <div class="social">
-          <a href="#"><i class="fab fa-github fa-2x"></i></a>
-          <a href="#"><i class="fab fa-x fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="#" class="btn btn-primary">Sign up for EaseHost</a>
+
+          <!--
+            @subsection Requirements
+            @description The system requirements for EaseHost
+          -->
+          <h3>System Requirements</h3>
+          <ul>
+            <li>Windows 10, Mac OSX, Linux</li>
+            <li>Node.js v12 or higher</li>
+          </ul>
+
+          <!--
+            @subsection Installation
+            @description The installation instructions for EaseHost CLI
+          -->
+          <h3>Installing the EaseHost CLI</h3>
+          <p>Mac (Homebrew)</p>
+          <pre><code>$ brew install EaseHost-cli</code></pre>
+          <p>Yarn</p>
+          <pre><code>$ Yarn install EaseHost-cli</code></pre>
+          <p>NPM</p>
+          <pre><code>$ NPM install EaseHost-cli</code></pre>
+     
+     <!-- Footer -->
+     <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+          <div>
+            <h1>
+              EaseHost
+            </h1>
+            <p>
+              Copyright &copy; 2024
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="docs.html">Docs</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-x fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
         </div>
-      </div>
-    </footer>
-  </body>
-</html>
+       </footer>
