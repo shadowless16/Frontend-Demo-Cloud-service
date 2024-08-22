@@ -23,6 +23,10 @@
             <li><a href="docs.html">Docs</a></li>
           </ul>
         </nav>
+        <div class="toggle-container">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" class="toggle"></label>
+        </div>
       </div>
     </div>
 
@@ -33,7 +37,8 @@
         <div class="showcase-text">
           <h1>Faster Depolyment</h1>
           <p>
-            Unlock Your Website's Full Potential Subheading: Scalable, Easy-to-Use Web Hosting Solutions for Forward-Thinking Businesses
+            Unlock Your Website's Full Potential Subheading: Scalable,
+            Easy-to-Use Web Hosting Solutions for Forward-Thinking Businesses
           </p>
 
           <a href="features.html" class="btn btn-outline">Read More</a>
@@ -114,68 +119,47 @@
       </div>
     </section>
 
-
     <!-- Languages -->
     <section class="languages">
-      <h2 class="md text-center my-2">
-        Supported Languages
-      </h2>
+      <h2 class="md text-center my-2">Supported Languages</h2>
       <div class="container flex">
         <div class="card">
-          <h4>
-            PHP
-          </h4>
-          <img src="images/logos/php.png" alt="" srcset="">
+          <h4>PHP</h4>
+          <img src="images/logos/php.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            Node.js
-          </h4>
-          <img src="images/logos/node.png" alt="" srcset="">
+          <h4>Node.js</h4>
+          <img src="images/logos/node.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            Go
-          </h4>
-          <img src="images/logos/go.png" alt="" srcset="">
+          <h4>Go</h4>
+          <img src="images/logos/go.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            C#
-          </h4>
-          <img src="images/logos/csharp.png" alt="" srcset="">
+          <h4>C#</h4>
+          <img src="images/logos/csharp.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            Python
-          </h4>
-          <img src="images/logos/python.png" alt="" srcset="">
+          <h4>Python</h4>
+          <img src="images/logos/python.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            Clojure
-          </h4>
-          <img src="images/logos/clojure.png" alt="" srcset="">
+          <h4>Clojure</h4>
+          <img src="images/logos/clojure.png" alt="" srcset="" />
         </div>
         <div class="card">
-          <h4>
-            Scala
-          </h4>
-          <img src="images/logos/scala.png" alt="" srcset="">
+          <h4>Scala</h4>
+          <img src="images/logos/scala.png" alt="" srcset="" />
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-     <footer class="footer bg-dark py-5">
+    <footer class="footer bg-dark py-5">
       <div class="container grid grid-3">
         <div>
-          <h1>
-            EaseHost
-          </h1>
-          <p>
-            Copyright &copy; 2024
-          </p>
+          <h1>EaseHost</h1>
+          <p>Copyright &copy; 2024</p>
         </div>
         <nav>
           <ul>
@@ -191,6 +175,34 @@
           <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
       </div>
-     </footer>
+    </footer>
+
+    <script>
+      // JavaScript to Toggle Dark Mode
+      document
+        .getElementById("dark-mode-toggle")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+
+          // Save the current mode to localStorage
+          if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            this.textContent = "Light Mode"; // Update button text
+          } else {
+            localStorage.setItem("theme", "light");
+            this.textContent = "Dark Mode"; // Update button text
+          }
+        });
+
+      // Check and apply the saved theme on page load
+      window.onload = function () {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          document.getElementById("dark-mode-toggle").textContent =
+            "Light Mode";
+        }
+      };
+    </script>
   </body>
 </html>
